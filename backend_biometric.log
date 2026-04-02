@@ -1,0 +1,388 @@
+2026-03-28 22:20:11,121 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-28 22:20:15,631 - BiometricRouter - INFO - Verification request received
+2026-03-28 22:20:15,633 - BiometricRouter - INFO - Starting 1:N match against 3 registered templates
+2026-03-28 22:20:15,636 - BiometricRouter - ERROR - Critical error during verification: Failed to initialize the algorithm library
+Traceback (most recent call last):
+  File "D:\KERJA\BIT\BiometricBackend\app\controllers\fingerprint_controller.py", line 147, in verify_fingerprint
+    zkfp2.Init()
+  File "D:\KERJA\BIT\BiometricBackend\venv\Lib\site-packages\pyzkfp\zkfp2.py", line 85, in Init
+    self._handle_error(ret)
+  File "D:\KERJA\BIT\BiometricBackend\venv\Lib\site-packages\pyzkfp\zkfp2.py", line 77, in _handle_error
+    raise error_class(error_message)
+pyzkfp._construct.errors_handler.AlgorithmLibraryInitializationError: Failed to initialize the algorithm library
+2026-03-28 22:21:53,384 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-28 22:21:55,795 - BiometricRouter - INFO - Verification request received
+2026-03-28 22:21:55,797 - BiometricRouter - INFO - Starting 1:N match against 3 registered templates
+2026-03-28 22:21:55,797 - BiometricRouter - ERROR - Critical error during verification: non-hexadecimal number found in fromhex() arg at position 0
+Traceback (most recent call last):
+  File "D:\KERJA\BIT\BiometricBackend\app\controllers\fingerprint_controller.py", line 147, in verify_fingerprint
+    db_tmp_bytes = bytes.fromhex(db_fp.template_data.strip())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: non-hexadecimal number found in fromhex() arg at position 0
+2026-03-28 22:22:15,599 - BiometricRouter - INFO - Verification request received
+2026-03-28 22:22:15,602 - BiometricRouter - INFO - Starting 1:N match against 3 registered templates
+2026-03-28 22:22:15,602 - BiometricRouter - ERROR - Critical error during verification: non-hexadecimal number found in fromhex() arg at position 0
+Traceback (most recent call last):
+  File "D:\KERJA\BIT\BiometricBackend\app\controllers\fingerprint_controller.py", line 147, in verify_fingerprint
+    db_tmp_bytes = bytes.fromhex(db_fp.template_data.strip())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: non-hexadecimal number found in fromhex() arg at position 0
+2026-03-28 22:23:51,204 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-28 22:24:28,956 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-28 22:24:40,225 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-28 22:24:40,234 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 3 template di DB
+2026-03-28 22:24:40,286 - BiometricRouter - ERROR - Gagal memproses template ID 1: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-28 22:24:40,287 - BiometricRouter - ERROR - Gagal memproses template ID 2: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-28 22:24:40,287 - BiometricRouter - ERROR - Gagal memproses template ID 3: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-28 22:24:40,288 - BiometricRouter - INFO - Sidik jari tidak ditemukan di database
+2026-03-30 08:40:29,439 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-30 09:06:22,339 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-30 09:06:35,689 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-30 09:06:49,152 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-30 09:07:02,110 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-30 09:14:31,361 - BiometricRouter - INFO - Mencoba registrasi profil NIK: 2536495480752364
+2026-03-30 09:14:31,390 - BiometricRouter - INFO - User Jajang (ID: 6) berhasil terdaftar
+2026-03-30 09:18:33,676 - BiometricRouter - INFO - Mencoba registrasi profil NIK: 5689435694587965
+2026-03-30 09:18:33,703 - BiometricRouter - INFO - User Jajang (ID: 7) berhasil terdaftar
+2026-03-30 09:18:45,847 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kanan untuk User ID: 7
+2026-03-30 09:18:45,887 - BiometricRouter - INFO - Template sidik jari Jempol Kanan tersimpan.
+2026-03-30 09:19:07,182 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:19:07,184 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 8 template di DB
+2026-03-30 09:19:07,255 - BiometricRouter - ERROR - Gagal memproses template ID 1: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:19:07,255 - BiometricRouter - ERROR - Gagal memproses template ID 2: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:19:07,256 - BiometricRouter - ERROR - Gagal memproses template ID 3: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:19:07,257 - BiometricRouter - ERROR - Gagal memproses template ID 4: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:19:07,257 - BiometricRouter - ERROR - Gagal memproses template ID 5: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:19:07,259 - BiometricRouter - ERROR - Gagal memproses template ID 6: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:19:07,260 - BiometricRouter - ERROR - Gagal memproses template ID 7: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:19:07,260 - BiometricRouter - ERROR - Gagal memproses template ID 8: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:19:07,262 - BiometricRouter - INFO - Sidik jari tidak ditemukan di database
+2026-03-30 09:20:09,547 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:20:09,552 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 8 template di DB
+2026-03-30 09:20:09,558 - BiometricRouter - ERROR - Gagal memproses template ID 1: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:20:09,561 - BiometricRouter - ERROR - Gagal memproses template ID 2: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:20:09,566 - BiometricRouter - ERROR - Gagal memproses template ID 3: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:20:09,569 - BiometricRouter - ERROR - Gagal memproses template ID 4: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:20:09,571 - BiometricRouter - ERROR - Gagal memproses template ID 5: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:20:09,576 - BiometricRouter - ERROR - Gagal memproses template ID 6: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:20:09,577 - BiometricRouter - ERROR - Gagal memproses template ID 7: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:20:09,582 - BiometricRouter - ERROR - Gagal memproses template ID 8: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:20:09,589 - BiometricRouter - INFO - Sidik jari tidak ditemukan di database
+2026-03-30 09:21:19,951 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:21:19,952 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 8 template di DB
+2026-03-30 09:21:19,953 - BiometricRouter - ERROR - Gagal memproses template ID 1: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:21:19,954 - BiometricRouter - ERROR - Gagal memproses template ID 2: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:21:19,955 - BiometricRouter - ERROR - Gagal memproses template ID 3: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:21:19,956 - BiometricRouter - ERROR - Gagal memproses template ID 4: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:21:19,957 - BiometricRouter - ERROR - Gagal memproses template ID 5: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:21:19,958 - BiometricRouter - ERROR - Gagal memproses template ID 6: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:21:19,959 - BiometricRouter - ERROR - Gagal memproses template ID 7: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:21:19,960 - BiometricRouter - ERROR - Gagal memproses template ID 8: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:21:19,960 - BiometricRouter - INFO - Sidik jari tidak ditemukan di database
+2026-03-30 09:22:58,645 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:22:58,647 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 8 template di DB
+2026-03-30 09:22:58,647 - BiometricRouter - ERROR - Gagal memproses template ID 1: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:22:58,648 - BiometricRouter - ERROR - Gagal memproses template ID 2: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:22:58,649 - BiometricRouter - ERROR - Gagal memproses template ID 3: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:22:58,651 - BiometricRouter - ERROR - Gagal memproses template ID 4: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:22:58,651 - BiometricRouter - ERROR - Gagal memproses template ID 5: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:22:58,652 - BiometricRouter - ERROR - Gagal memproses template ID 6: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:22:58,653 - BiometricRouter - ERROR - Gagal memproses template ID 7: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:22:58,653 - BiometricRouter - ERROR - Gagal memproses template ID 8: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:22:58,654 - BiometricRouter - INFO - Sidik jari tidak ditemukan di database
+2026-03-30 09:30:27,151 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:30:27,154 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:30:27,155 - BiometricRouter - ERROR - Gagal memproses template ID 1: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:30:27,156 - BiometricRouter - ERROR - Gagal memproses template ID 2: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:30:27,157 - BiometricRouter - ERROR - Gagal memproses template ID 3: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:30:27,158 - BiometricRouter - ERROR - Gagal memproses template ID 4: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:30:27,159 - BiometricRouter - ERROR - Gagal memproses template ID 5: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:30:27,160 - BiometricRouter - ERROR - Gagal memproses template ID 6: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:30:27,161 - BiometricRouter - ERROR - Gagal memproses template ID 7: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:30:27,161 - BiometricRouter - INFO - Sidik jari tidak ditemukan di database
+2026-03-30 09:36:05,725 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:36:05,726 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:36:05,731 - BiometricRouter - ERROR - Gagal memproses template ID 1: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:36:05,731 - BiometricRouter - ERROR - Gagal memproses template ID 2: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:36:05,731 - BiometricRouter - ERROR - Gagal memproses template ID 3: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:36:05,731 - BiometricRouter - ERROR - Gagal memproses template ID 4: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:36:05,738 - BiometricRouter - ERROR - Gagal memproses template ID 5: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:36:05,738 - BiometricRouter - ERROR - Gagal memproses template ID 6: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:36:05,738 - BiometricRouter - ERROR - Gagal memproses template ID 7: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:36:05,738 - BiometricRouter - INFO - Sidik jari tidak ditemukan di database
+2026-03-30 09:39:06,385 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:39:06,389 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:39:06,390 - BiometricRouter - ERROR - Gagal memproses template ID 1: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:06,391 - BiometricRouter - ERROR - Gagal memproses template ID 2: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:06,394 - BiometricRouter - ERROR - Gagal memproses template ID 3: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:06,395 - BiometricRouter - ERROR - Gagal memproses template ID 4: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:06,397 - BiometricRouter - ERROR - Gagal memproses template ID 5: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:06,398 - BiometricRouter - ERROR - Gagal memproses template ID 6: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:06,400 - BiometricRouter - ERROR - Gagal memproses template ID 7: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:06,401 - BiometricRouter - INFO - Sidik jari tidak ditemukan di database
+2026-03-30 09:39:09,720 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:39:09,722 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:39:09,723 - BiometricRouter - ERROR - Gagal memproses template ID 1: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:09,724 - BiometricRouter - ERROR - Gagal memproses template ID 2: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:09,724 - BiometricRouter - ERROR - Gagal memproses template ID 3: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:09,725 - BiometricRouter - ERROR - Gagal memproses template ID 4: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:09,725 - BiometricRouter - ERROR - Gagal memproses template ID 5: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:09,726 - BiometricRouter - ERROR - Gagal memproses template ID 6: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:09,727 - BiometricRouter - ERROR - Gagal memproses template ID 7: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:39:09,727 - BiometricRouter - INFO - Sidik jari tidak ditemukan di database
+2026-03-30 09:40:25,740 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:40:25,740 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:40:25,740 - BiometricRouter - ERROR - Gagal memproses template ID 1: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:40:25,740 - BiometricRouter - ERROR - Gagal memproses template ID 2: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:40:25,743 - BiometricRouter - ERROR - Gagal memproses template ID 3: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:40:25,743 - BiometricRouter - ERROR - Gagal memproses template ID 4: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:40:25,743 - BiometricRouter - ERROR - Gagal memproses template ID 5: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:40:25,743 - BiometricRouter - ERROR - Gagal memproses template ID 6: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:40:25,745 - BiometricRouter - ERROR - Gagal memproses template ID 7: No method matches given arguments for zkfp2.DBMatch: (<class 'NoneType'>, <class 'bytes'>, <class 'bytes'>)
+2026-03-30 09:40:25,745 - BiometricRouter - INFO - Sidik jari tidak ditemukan di database
+2026-03-30 09:43:40,229 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-30 09:46:46,066 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:46:46,080 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:46:46,134 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 09:46:50,071 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:46:50,073 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:46:50,077 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 09:50:59,484 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:50:59,487 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:50:59,488 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 09:51:02,948 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:51:02,949 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:51:02,950 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 09:51:06,393 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:51:06,394 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:51:06,395 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 09:51:09,890 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:51:09,891 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:51:09,892 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 09:55:59,943 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:55:59,945 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 7 template di DB
+2026-03-30 09:55:59,947 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 09:56:34,015 - BiometricRouter - INFO - Mencoba registrasi profil NIK: 5843694584256954
+2026-03-30 09:56:34,037 - BiometricRouter - INFO - User Jajang (ID: 8) berhasil terdaftar
+2026-03-30 09:56:52,058 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kanan untuk User ID: 8
+2026-03-30 09:56:52,083 - BiometricRouter - INFO - Template sidik jari Jempol Kanan tersimpan.
+2026-03-30 09:57:02,843 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:57:02,844 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 8 template di DB
+2026-03-30 09:57:02,846 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 09:57:07,031 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 09:57:07,033 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 8 template di DB
+2026-03-30 09:57:07,035 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 10:35:23,275 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-30 10:36:22,912 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 10:36:22,930 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 8 template di DB
+2026-03-30 10:36:23,013 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 10:36:52,497 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 10:36:52,497 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 8 template di DB
+2026-03-30 10:36:52,497 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 10:36:56,777 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 10:36:56,778 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 8 template di DB
+2026-03-30 10:36:56,778 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 10:38:12,141 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-30 10:39:19,535 - BiometricRouter - INFO - Mencoba registrasi profil NIK: 5849643584054269
+2026-03-30 10:39:19,580 - BiometricRouter - INFO - User Andi (ID: 1) berhasil terdaftar
+2026-03-30 10:39:30,794 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kanan untuk User ID: 1
+2026-03-30 10:39:30,833 - BiometricRouter - INFO - Template sidik jari Jempol Kanan tersimpan.
+2026-03-30 10:40:03,401 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 10:40:03,404 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 1 template di DB
+2026-03-30 10:40:03,448 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 11:20:16,991 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-30 11:35:09,767 - BiometricRouter - ERROR - Critical Error: ZKFP SDK failed to initialize: Failed to initialize the algorithm library
+2026-03-30 11:36:12,877 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 11:36:12,894 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 0 template di DB
+2026-03-30 11:36:12,895 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 11:36:58,882 - BiometricRouter - INFO - Mencoba registrasi profil NIK: 1234567891234567
+2026-03-30 11:36:58,898 - BiometricRouter - INFO - User Andi (ID: 1) berhasil terdaftar
+2026-03-30 11:37:09,805 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kanan untuk User ID: 1
+2026-03-30 11:37:09,829 - BiometricRouter - INFO - Template sidik jari Jempol Kanan tersimpan.
+2026-03-30 11:38:33,306 - BiometricRouter - INFO - Menerima permintaan verifikasi
+2026-03-30 11:38:33,309 - BiometricRouter - INFO - Memulai pencocokan 1:N terhadap 1 template di DB
+2026-03-30 11:38:33,351 - BiometricRouter - INFO - TIDAK DIKENALI! Sidik jari tidak ditemukan di database
+2026-03-30 12:05:17,896 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 12:10:20,460 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 12:11:22,575 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 12:15:11,777 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 12:16:14,630 - BiometricRouter - INFO - Mencoba registrasi profil NIK: 1234567891234567
+2026-03-30 12:16:14,659 - BiometricRouter - INFO - User Andi Surandi (ID: 1) berhasil terdaftar
+2026-03-30 12:16:28,417 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kanan untuk User ID: 1
+2026-03-30 12:16:28,453 - BiometricRouter - INFO - Template sidik jari Jempol Kanan tersimpan.
+2026-03-30 12:16:31,768 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:30:09,145 - BiometricRouter - INFO - Mencoba registrasi profil NIK: 1234567891234567
+2026-03-30 13:30:09,204 - BiometricRouter - INFO - User Andi Surandi (ID: 1) berhasil terdaftar
+2026-03-30 13:30:25,912 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kanan untuk User ID: 1
+2026-03-30 13:30:25,928 - BiometricRouter - INFO - Template sidik jari Jempol Kanan tersimpan.
+2026-03-30 13:30:28,575 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:32:21,501 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:34:22,056 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:35:06,042 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:39:25,914 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:41:17,411 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:42:24,349 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:44:14,845 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:45:20,226 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:46:18,712 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:48:35,584 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:50:09,284 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:54:37,212 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:55:21,589 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:58:41,366 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 13:59:52,257 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:00:28,049 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:01:02,888 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:01:21,733 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:04:52,360 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:08:27,833 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:08:57,164 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:10:46,859 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:12:44,538 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:13:25,284 - BiometricRouter - INFO - Mencoba registrasi profil NIK: 2535486985427569
+2026-03-30 14:13:25,322 - BiometricRouter - INFO - User Andi (ID: 2) berhasil terdaftar
+2026-03-30 14:13:45,923 - BiometricRouter - INFO - Menyimpan sidik jari Jari Tengah Kiri untuk User ID: 2
+2026-03-30 14:13:45,966 - BiometricRouter - INFO - Template sidik jari Jari Tengah Kiri tersimpan.
+2026-03-30 14:13:48,565 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:14:52,527 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:15:20,985 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:24:28,171 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:24:34,066 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:34:15,944 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:34:21,083 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:35:54,726 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:36:02,320 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:36:06,534 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:36:10,096 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:36:14,269 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:37:54,567 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:38:00,605 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:38:04,649 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:57:05,045 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:57:09,980 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:57:14,898 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:57:31,082 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:59:30,768 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:59:41,352 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 14:59:47,776 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 15:12:05,921 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 15:12:10,629 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 15:12:51,967 - BiometricRouter - INFO - Mencoba registrasi/update profil NIK: 3303548455004008
+2026-03-30 15:12:51,971 - BiometricRouter - INFO - NIK 3303548455004008 tidak ditemukan. Membuat user baru.
+2026-03-30 15:12:52,000 - BiometricRouter - INFO - User yunif (ID: 4) berhasil diproses.
+2026-03-30 15:13:21,493 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kiri untuk User ID: 4
+2026-03-30 15:13:21,506 - BiometricRouter - INFO - Template sidik jari Jempol Kiri tersimpan.
+2026-03-30 15:13:25,080 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 15:13:35,518 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 15:14:11,192 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:21:25,371 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:21:34,248 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:21:35,913 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:21:40,640 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:22:25,197 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:22:30,496 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:22:58,402 - BiometricRouter - INFO - Mencoba registrasi/update profil NIK: 3034387048788487
+2026-03-30 16:22:58,402 - BiometricRouter - INFO - NIK 3034387048788487 tidak ditemukan. Membuat user baru.
+2026-03-30 16:22:58,430 - BiometricRouter - INFO - User ikmal (ID: 5) berhasil diproses.
+2026-03-30 16:23:14,594 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kiri untuk User ID: 5
+2026-03-30 16:23:14,611 - BiometricRouter - INFO - Template sidik jari Jempol Kiri tersimpan.
+2026-03-30 16:23:17,570 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:23:24,520 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:23:34,564 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:23:53,443 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:23:58,130 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:24:14,346 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:25:27,017 - BiometricRouter - INFO - Mencoba registrasi/update profil NIK: 7946791076918484
+2026-03-30 16:25:27,018 - BiometricRouter - INFO - NIK 7946791076918484 tidak ditemukan. Membuat user baru.
+2026-03-30 16:25:27,042 - BiometricRouter - INFO - User yozep (ID: 6) berhasil diproses.
+2026-03-30 16:26:09,516 - BiometricRouter - INFO - Menyimpan sidik jari Jari Tengah Kanan untuk User ID: 6
+2026-03-30 16:26:09,547 - BiometricRouter - INFO - Template sidik jari Jari Tengah Kanan tersimpan.
+2026-03-30 16:26:16,322 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:26:36,521 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:26:39,669 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:27:19,316 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:27:31,790 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:27:43,951 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:46:55,104 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:47:09,336 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:47:48,492 - BiometricRouter - INFO - Mencoba registrasi/update profil NIK: 2546983548083254
+2026-03-30 16:47:48,496 - BiometricRouter - INFO - NIK 2546983548083254 tidak ditemukan. Membuat user baru.
+2026-03-30 16:47:48,529 - BiometricRouter - INFO - User Andi (ID: 7) berhasil diproses.
+2026-03-30 16:48:02,708 - BiometricRouter - INFO - Menyimpan sidik jari Kelingking Kanan untuk User ID: 7
+2026-03-30 16:48:02,746 - BiometricRouter - INFO - Template sidik jari Kelingking Kanan tersimpan.
+2026-03-30 16:48:05,488 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:48:16,493 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:48:27,564 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:48:32,887 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:48:38,081 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:54:58,180 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:55:37,998 - BiometricRouter - INFO - Mencoba registrasi/update profil NIK: 2548706935480524
+2026-03-30 16:55:38,000 - BiometricRouter - INFO - NIK 2548706935480524 tidak ditemukan. Membuat user baru.
+2026-03-30 16:55:38,196 - BiometricRouter - INFO - User Jajang (ID: 8) berhasil diproses.
+2026-03-30 16:56:17,860 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kanan untuk User ID: 8
+2026-03-30 16:56:17,899 - BiometricRouter - INFO - Template sidik jari Jempol Kanan tersimpan.
+2026-03-30 16:56:21,078 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:56:29,184 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:56:36,434 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:56:48,147 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:56:49,865 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:56:52,818 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:56:55,290 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:57:32,673 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:57:43,398 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:57:51,095 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:58:00,012 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:58:04,605 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:58:11,969 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 16:58:25,515 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 17:02:42,418 - BiometricRouter - INFO - Mencoba registrasi/update profil NIK: 3358045808758088
+2026-03-30 17:02:42,421 - BiometricRouter - INFO - NIK 3358045808758088 tidak ditemukan. Membuat user baru.
+2026-03-30 17:02:42,453 - BiometricRouter - INFO - User darren (ID: 9) berhasil diproses.
+2026-03-30 17:02:57,064 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kanan untuk User ID: 9
+2026-03-30 17:02:57,075 - BiometricRouter - INFO - Template sidik jari Jempol Kanan tersimpan.
+2026-03-30 17:03:03,567 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 17:03:11,243 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 17:07:33,637 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 17:07:41,601 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 17:12:04,928 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 17:12:09,737 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 17:12:13,593 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 17:12:22,551 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 17:12:26,695 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-30 19:26:54,981 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 14:38:07,640 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 14:38:13,470 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 14:38:19,305 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 14:38:23,513 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 14:40:52,177 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 14:40:57,255 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 15:41:58,794 - BiometricRouter - INFO - Mencoba registrasi/update profil NIK: 5248694536945876
+2026-03-31 15:41:58,811 - BiometricRouter - INFO - NIK 5248694536945876 tidak ditemukan. Membuat user baru.
+2026-03-31 15:41:58,825 - BiometricRouter - INFO - User Alddy (ID: 2) berhasil diproses.
+2026-03-31 15:42:22,362 - BiometricRouter - INFO - Menyimpan sidik jari Jempol Kiri untuk User ID: 2
+2026-03-31 15:42:22,407 - BiometricRouter - INFO - Template sidik jari Jempol Kiri tersimpan.
+2026-03-31 15:42:34,310 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 15:43:59,694 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 15:44:05,476 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 15:44:10,207 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 16:17:43,325 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 16:19:21,200 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 16:27:24,739 - BiometricRouter - INFO - Mencoba registrasi/update profil NIK: 1564394556666669
+2026-03-31 16:27:24,759 - BiometricRouter - INFO - NIK 1564394556666669 tidak ditemukan. Membuat user baru.
+2026-03-31 16:27:24,848 - BiometricRouter - INFO - User ANDI SURANDI  (ID: 3) berhasil diproses.
+2026-03-31 16:27:43,276 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 16:28:13,480 - BiometricRouter - INFO - Mencoba registrasi/update profil NIK: 4649876764344644
+2026-03-31 16:28:13,483 - BiometricRouter - INFO - NIK 4649876764344644 tidak ditemukan. Membuat user baru.
+2026-03-31 16:28:13,513 - BiometricRouter - INFO - User ANDI SURANDI  (ID: 4) berhasil diproses.
+2026-03-31 16:28:30,511 - BiometricRouter - INFO - Menyimpan sidik jari Telunjuk Kanan untuk User ID: 4
+2026-03-31 16:28:30,538 - BiometricRouter - INFO - Template sidik jari Telunjuk Kanan tersimpan.
+2026-03-31 16:29:02,812 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 16:32:18,452 - BiometricRouter - INFO - Mencoba registrasi/update profil NIK: 5325884369859985
+2026-03-31 16:32:18,455 - BiometricRouter - INFO - NIK 5325884369859985 tidak ditemukan. Membuat user baru.
+2026-03-31 16:32:18,481 - BiometricRouter - INFO - User JOJO (ID: 5) berhasil diproses.
+2026-03-31 16:32:39,981 - BiometricRouter - INFO - Menyimpan sidik jari Kelingking Kanan untuk User ID: 5
+2026-03-31 16:32:40,009 - BiometricRouter - INFO - Template sidik jari Kelingking Kanan tersimpan.
+2026-03-31 16:32:48,652 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 16:32:53,663 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 16:33:02,173 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
+2026-03-31 16:33:06,167 - BiometricRouter - INFO - Mengirim semua data sidik jari ke Android untuk Local Matching
